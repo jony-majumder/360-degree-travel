@@ -132,9 +132,9 @@ nav a {
     flex: 50%;
 }
 
-/* .tours-image{
+.tours-image{
     flex: 50%;
-} */
+}
 
 .tours-text h3 {
     margin-top: 0;
@@ -195,6 +195,137 @@ ul {
     padding: 0 260px;
 }
 
+/* why choose us section styles */
+
+.choose-us-text {
+    text-align: center;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.box {
+    /* border: 2px solid green;
+    border-radius: 16px; */
+    /* width: 573px; */
+    padding: 32px 53px 32px 32px;
+}
+
+#box1st {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#box2nd {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.box img {
+    margin-bottom: 32px;
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+}
+
+#box3rd {
+    /* width: 573px; */
+    margin-top: 24px;
+    width: calc(100% / 2 - 100px);
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+/*====== newsletter section styles =======*/
+
+.newsletter-container {
+    display: flex;
+    gap: 20px;
+}
+
+.newsletter-form-container {
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.newsletter-form-container h3 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.newsletter-form-container p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* .newsletter-form input[type="text"], input[type="email"], input[type="submit"]{
+    display: block;
+} */
+
+.newsletter-form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#subscribe-btn {
+    font-size: 1.25rem;
+    background: #FF5400;
+}
+
+.newsletter-image-container {
+    position: relative;
+}
+
+/* .newsletter-image-container img {
+    width: 100%;
+} */
+
+.save-text {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    width: 200px;
+    height: 70px;
+    background-color: #FF5400;
+    transform: rotate(-30deg);
+    color: #FFF;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.save-text h3 {
+    margin-top: 5px;
+}
+
+.website-address {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+    font-weight: 200;
+    color: rgb(240, 240, 228);
+}
+
 /* Responsive styles */
 
 @media screen and (max-width: 600px) {
@@ -202,7 +333,8 @@ ul {
     nav>ul,
     .input-container,
     .tours-container,
-    .row-container 
+    .row-container,
+    .box-container2
     {
         flex-direction: column;
     }
@@ -248,6 +380,10 @@ ul {
     .tours-text{
         flex: 100%;
     }
+    .tours-image{
+        flex: 100%;
+    }
+
 
     /* Choose your destination section responsive */
     .row-container img {
@@ -256,6 +392,26 @@ ul {
 
     .destination-text p {
         padding: 20px;
+    }
+
+    /* choose us responsive */
+    .box-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    #box3rd {
+        width: calc(100% - 100px);
+    }
+    
+    /* newsletter section responsive */
+
+    .newsletter-container {
+        flex-direction: column-reverse;
+    }
+
+    .newsletter-image-container img{
+        width: 100%;
     }
 }
 
@@ -288,5 +444,9 @@ ul {
     
     .btn-primary{
         width:100%;
+    }
+
+    .newsletter-image-container img{
+        width: 100%;        
     }
 }
