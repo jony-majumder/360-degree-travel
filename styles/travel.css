@@ -132,8 +132,12 @@ nav a {
     flex: 50%;
 }
 
-.tours-image{
+.tours-image-container{
     flex: 50%;
+}
+.tours-image-container img{
+    width: 100%;
+    height: 90%;
 }
 
 .tours-text h3 {
@@ -153,6 +157,8 @@ ul {
     margin-top: 30px;
     font-size: 1.25rem;
 }
+
+
 
 /* destination section styles */ 
 
@@ -326,6 +332,29 @@ ul {
     color: rgb(240, 240, 228);
 }
 
+
+/*===== footer section styles====*/
+
+.footer-background {
+    background-color: rgb(240, 240, 240);
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.padding-space {
+    padding: 20px 0;
+}
+
+.footer-icon i {
+    padding: 20px;
+}
+
+/* =================== */
+
 /* Responsive styles */
 
 @media screen and (max-width: 600px) {
@@ -376,15 +405,19 @@ ul {
         width: 85%;
         padding: 0 16px;
     }
-
+    
     .tours-text{
         flex: 100%;
     }
-    .tours-image{
+    
+    .tours-image-container{
         flex: 100%;
     }
-
-
+    
+    .tours-image-container img{
+        width: 100%;
+    }
+    
     /* Choose your destination section responsive */
     .row-container img {
         width: 100%;        
